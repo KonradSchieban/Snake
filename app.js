@@ -14,6 +14,12 @@ var is_paused = false;
 
 var snake_array;
 
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope) {
+    $scope.game_status = "";
+});
+
+
 function setSpeed(speed){
 	
 	interval = Math.round(240/speed);
